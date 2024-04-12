@@ -1,0 +1,11 @@
+name: Test Action
+
+runs:
+  using: "composite"
+  steps:
+    - name: Successfully Pulled and Running
+      run: |
+        echo "Successfully Pulled and Running"
+        echo "Successfully Pulled and Running" >> $GITHUB_OUTPUT
+      shell: bash
+        
